@@ -4,24 +4,52 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color: #010001;
+    --second-color: #17a3b8;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
-    
+    color: #fff ;
+    background-color: var(--primary-color);
 }
-.navbar {
-    width: 10vh;
 
+/*NAVBAR*/
+.navbar {
+    height: 10vh;
+    padding: 0 8%;
+    background-color: transparent !important;
 }
 
 .navbar__logo {
     outline: 1px solid black;
-    height: 10vh;
+    height: 6vh;
 }
 
-.header {
+
+.collapse {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/*HEADER*/
+.header, .carousel-item{
     height: 100vh;
+
 }
 
-.carousel {
-    height: 100%;
+.header__img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel, .header {
+    position: static;
+}
+
+/*QUIENESSOMOS*/
+.quienes {
+   
 }
