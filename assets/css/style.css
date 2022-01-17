@@ -51,5 +51,118 @@ body{
 
 /*QUIENESSOMOS*/
 .quienes {
-   
+   padding: 10vh 5%;
 }
+.quienes__h2 {
+    text-align: center;
+    
+}
+.quienes__h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--second-color);
+    margin: 4vh 0;
+}
+
+.quienes__cards {
+    display: flex;
+    gap: 4%;
+
+}
+
+.quienes__icon {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--second-color);
+    margin: 2vh 0;
+}
+
+/* DESTACADOS */
+.destacados {
+    margin: auto;
+    padding: 10vh 5%;
+}
+
+.destacados__h2 {
+    text-align: center;
+}
+
+.destacados__h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--second-color);
+    margin: 4vh auto;
+}
+
+.card__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    width: 23%;
+    background-color: var(--second-color);
+    border: 1px solid #fff;
+}
+
+.card__img-1 {
+    background-image: url(../img/card1.jpg);
+}
+.card__img-2 {
+    background-image: url(../img/card2.jpg);
+}
+.card__img-3 {
+    background-image: url(../img/card3.jpg);
+}
+.card__img-4 {
+    background-image: url(../img/card4.jpg);
+}
+.card__img { /* caradcteristicas comunes*/
+    background-position: center; /*centrar fondo*/
+    background-size: cover; /*redimensionar img*/
+    width: 100%; /* ancho completo de la card*/
+    height: 200px; /* altura fija*/ 
+}
+/* Contacto */
+.contacto {
+    margin: auto;
+    padding: 10vh 5%;
+}
+
+.contacto__h2 {
+    text-align: center;
+}
+.contacto__h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--second-color);
+    margin: 4vh auto;
+}
+
+.contacto__container {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #010001;
+    height: 50vh;
+}
+
+.contacto__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/*  */
