@@ -92,18 +92,18 @@
         </div>
     </section>
 
-    <!-- DESTACADOS -->
+    <!-- DESTACADOS, MODAL REQUIERE DATABSTOGGLE(NOMBRE) Y DATABSTARGET(ID DEL ELEMENTO MODAL) -->
     <section class="destacados" id = "destacado">
         <h2 class="destacados__h2">Destacados</h2>
         <section class="card__container">
-            <div class="card" >
-                <div class="card__img card__img-1"></div>
+            <div class="card "  data-bs-toggle="modal" data-bs-target="#ventanaModal" >
+                <div class="card__img card__img-1" ></div>
                 <div class="card-body">
                     <h3 class="card-title">Destino 1</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minus voluptates dolorem est esse non fuga! Quibusdam numquam velit error dicta omnis quas dolorem, in corporis veniam, quos dolores illo.</p>
                 </div>
             </div>
-            <div class="card" >
+            <div class="card" data-bs-toggle="modal" data-bs-target="#ventanaModal" >
                 <div class="card__img card__img-2"></div>
                 <div class="card-body">
                     <h3 class="card-title">Destino 2</h3>
@@ -111,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="card" >
+            <div class="card" data-bs-toggle="modal" data-bs-target="#ventanaModal" >
                 <div class="card__img card__img-3"></div>
                 <div class="card-body">
                     <h3 class="card-title">Destino 3</h3>
@@ -119,7 +119,7 @@
                 </div>
             </div>
 
-            <div class="card" >
+            <div class="card" data-bs-toggle="modal" data-bs-target="#ventanaModal" >
                 <div class="card__img card__img-4"></div>
                 <div class="card-body">
                     <h3 class="card-title">Destino 4</h3>
@@ -140,7 +140,7 @@
         <h2 class="contacto__h2">Contacto</h2>
         <div class="contacto__container">
             <h3 class="contacto__h3">Hola, gracias por contactarnos</h3>
-            <button type="button " class="btn btn-primary px-5 py-2 red-tooltip " data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pulsa para rellenar el formulario"><a href="" class="contacto__link">Comenzar</a></button>
+            <button type="button " class="btn px-5 py-2 red-tooltip " data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pulsa para rellenar el formulario"><a href="https://j1775veg28h.typeform.com/to/X2HLFc2K" target="_blank" class="contacto__link">Comenzar</a></button>
         </div>
     </section>
 
@@ -155,6 +155,29 @@
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
         </div>
     </footer>
+<!-- MODAL -->
+    <div class="modal" tabindex="-1" id="ventanaModal"  >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Registra tu nombre y correo para informarte de nuestras ofertas de viaje!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>Nombre: </span>
+                <span><input type="text" class="modal__imput" placeholder="Nombre y Apellido"></span><br>
+                <span>Correo: </span>
+                <span><input class="modal__imput" type="email" placeholder="email@email.com"></span> 
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Enviar datos</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     
@@ -164,5 +187,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- JS -->
     <script src="./assets/js/index.js"></script>
+
+    
 </body>
 </html>

@@ -35,8 +35,9 @@ body{
 }
 
 /*HEADER*/
-.header, .carousel-item{
+.header, .carousel, .carousel-item {
     height: 100vh;
+    width: 100%;
 
 }
 .navbar-brand{
@@ -46,6 +47,7 @@ body{
 .header__img {
     object-fit: cover;
     object-position: center;
+
 }
 
 #logo {
@@ -77,6 +79,8 @@ body{
 .quienes__cards {
     display: flex;
     gap: 4%;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -91,7 +95,7 @@ body{
 .quienes__icon i {
     font-size: 2.5rem;
     line-height: 10vh;
-
+    cursor: pointer;
 }
 /* DESTACADOS */
 .destacados {
@@ -124,6 +128,7 @@ body{
     background-color: var(--second-color);
     border: 1px solid #fff;
     box-shadow: 8px 8px 15px #FCFCFC30;
+    cursor: pointer;
 }
 
 .card__img-1 {
@@ -148,6 +153,7 @@ body{
 .contacto {
     margin: auto;
     padding: 10vh 5%;
+   
 }
 
 .contacto__h2 {
@@ -167,12 +173,17 @@ body{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    color: #010001;
+    color: var(--primary-color);
     height: 50vh;
 }
-
+.contacto__h3 {
+    margin: 40px 0;
+}
+.btn {
+    background-color: #17a3b8;
+}
 .contacto__link {
     color: #fff;
     text-decoration: none;
@@ -187,9 +198,13 @@ body{
     justify-content: space-evenly;
     align-items: center;
     margin: auto;
-    height: 10vh;
+    height: max-content;
+    padding: 2vh 0;
 }
-
+.contacto__h3 {
+    
+    text-align: center;
+}
 .footer__icons a {
     text-decoration: none;
     color: #fff;
@@ -236,4 +251,52 @@ body{
 .h1:hover {
     font-size: 2.6rem;
     transition: .2s all;
+}
+/* MODAL*/
+.modal-content{
+    color: var(--primary-color);
+}
+
+.modal__imput{
+    display: flex;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+/* eliminar linea del textarea en el estado focus*/
+.modal__imput:focus {
+    outline: none;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width : 992px){
+    .header, .carousel, .carousel-item {
+        height: max-content;
+    }
+    .quienes__cards {
+        flex-direction: column;
+    }
+    .card__container {
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width : 576px){
+    .fab {
+        font-size: 2rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        
+    }
+
+    .quienes, .destacados {
+        padding: 5vh;
+    }
 }
