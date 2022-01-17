@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
 .navbar {
     width: 10vh;
+
 }
 
 .navbar__logo {
     outline: 1px solid black;
     height: 10vh;
+}
+
+.header {
+    height: 100vh;
+}
+
+.carousel {
+    height: 100%;
 }
